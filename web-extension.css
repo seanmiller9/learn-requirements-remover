@@ -1,20 +1,14 @@
-/* Style sheets for the extension -- web-extension.css
+/* 
+   Style sheets for the extension -- web-extension.css
    File that include all styling for the extension
    By: Sean Miller
-   2018-12-21 */
+   2018-12-21 
+*/
 
 #title {
     font-size: 24px;
     text-align: center;
     margin: 2% auto 0;
-}
-
-#logo {
-    width: 50px;
-    height: 50px;
-    margin: 5px auto 0;
-    background: url(images/fail.png) no-repeat center;
-    background-size: contain;
 }
 
 #titlebox {
