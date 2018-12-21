@@ -1,30 +1,32 @@
 {
-    "name": "Duolingo Swahili+",
-    "version": "1.0.0",
-    "description": "This extension provides users with audio during Swahili lessons on Duolingo",
-    "short_name": "Swahili ni nzuri!",
+    "name": "LEARN System Requirements Remover",
+    "version": "0.0.1",
+    "description": "Plain and simple. This extension removes that hideous banner
+                    which greets you every time you log on to LEARN using Chrome
+                    or any other new browser where you didn't simply click 'Allow 
+                    Flash'. Clicking that 'Allow Flash' button may seem like an 
+                    easier fix than this but it is temporary. This is much more efficient.
+                    Use this extension to start enjoying LEARN (and your life in general)
+                    again.",
+    "short_name": "LEARN banner remover!",
     "permissions": [
         "activeTab"
     ],
     "content_scripts": [
         {
             "matches": [
-                "*://www.duolingo.com/*"
+                "*://learn.uwaterloo.ca/d2l/home*"
             ],
             "js": [
                 "content.js"
             ]
         }
     ],
-    "background": {
-        "scripts": ["background.js"], 
-        "persistent": true
-    },
     "browser_action": {
         "default_popup": "popup.html"
     },
     "icons": {
-        "128": "images/tanzania-flag-128.png"
+        "128": "images/fail.png"
     },
     "manifest_version": 2
 }
