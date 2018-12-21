@@ -1,0 +1,43 @@
+/* Style sheets for the extension -- web-extension.css
+   File that include all styling for the extension
+   By: Sean Miller
+   2018-12-21 */
+
+#title {
+    font-size: 24px;
+    text-align: center;
+    margin: 2% auto 0;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    margin: 5px auto 0;
+    background: url(images/fail.png) no-repeat center;
+    background-size: contain;
+}
+
+#titlebox {
+    margin: 0;
+    padding: 0;
+}
+
+#seperator {
+    border: 2%;
+}
+
+#container {
+    width: 250px;
+    font-family: 'Staatliches', cursive;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    height: auto;
+}
+
+.description {
+    font-size: 14px;
+    text-align: center;
+    margin: 5% auto 0;
+    height: auto;
+}
