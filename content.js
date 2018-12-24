@@ -3,11 +3,8 @@
 // By: Sean Miller
 // 2018-12-21
 
-// this is the dreaded HTML element which encompasses 
-// the failed requirements field
-const bannerElement = document.querySelector(
-  "body > div.d2l-page-main.d2l-max-width.d2l-min-width.d2l-home > div.d2l-page-main-padding > div.d2l-homepage > div > div > div > div.homepage-col-4 > div.d2l-widget.d2l-tile.d2l-custom-widget"
-);
+let xpath = "//div[contains(@class, 'results') and contains(string(), 'Your computer does not meet the system requirements')]";
+let bannerElement = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
 
 // destroy the banner
-bannerElement.parentNode.removeChild(bannerElement);
+bannerElement.style.background = "#C0C0C0";
